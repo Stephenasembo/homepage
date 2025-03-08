@@ -4,3 +4,16 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+header {
+  position: relative;
+}
+
+header > span {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  width: min-content;
+  font-size: 32px;
+  font-weight: 700;
+}
