@@ -67,6 +67,7 @@ h3 {
 
 .contact {
   background-color: skyblue;
+  color: white;
 }
 
 .contact p:last-child {
@@ -90,4 +91,27 @@ h2, h3 {
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   margin-bottom: 4rem;
+}
+
+/* Tablet Design */
+@media (min-width: 650px) {
+  footer {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    background-color: skyblue;
+    justify-items: center;
+  }
+  footer img {
+    margin-top: 1rem;
+  }
+  .contact p {
+    margin: 0.5rem;
+  }
+  .contact p:last-child {
+    justify-content: start;
+    gap: 32px;
+  }
+  body {
+    font-size: 1.5rem;
+  }
 }
