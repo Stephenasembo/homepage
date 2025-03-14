@@ -17,3 +17,13 @@ header > span {
   font-size: 32px;
   font-weight: 700;
 }
+
+.imageBox {
+  width: 100%;
+}
+
+.imageBox > img {
+  object-fit: contain;
+  width: 100%;
+  height: min-content;
+}
