@@ -27,3 +27,33 @@ header > span {
   width: 100%;
   height: min-content;
 }
+
+h3 {
+  margin-top: 0;
+}
+
+.projectInfo {
+  display: grid;
+  grid-template-rows: min-content 1fr;
+}
+
+.projectInfo > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.projectInfo > div img {
+  width: 32px;
+  height: 32px;
+  margin: 5px 5px 0px 0px;
+}
+
+.projectInfo > div > p {
+  margin: 0;
+  justify-self: end;
+}
+
+.projectInfo > p {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
