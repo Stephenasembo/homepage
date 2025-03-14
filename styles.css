@@ -16,6 +16,7 @@ header > span {
   width: min-content;
   font-size: 32px;
   font-weight: 700;
+  color: white;
 }
 
 .imageBox {
@@ -56,4 +57,26 @@ h3 {
 .projectInfo > p {
   margin-top: 0;
   margin-bottom: 32px;
+}
+
+#projectDisplay > section {
+  background-color: grey;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.contact {
+  background-color: skyblue;
+}
+
+.contact p:last-child {
+  margin-bottom: 0;
+  padding-bottom: 32px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact p:last-child > img {
+  width: 32px;
+  height: 32px;
 }
