@@ -36,6 +36,7 @@ h3 {
 .projectInfo {
   display: grid;
   grid-template-rows: min-content 1fr;
+  margin-left: 5px;
 }
 
 .projectInfo > div {
@@ -60,9 +61,8 @@ h3 {
 }
 
 #projectDisplay > section {
-  background-color: grey;
-  margin-bottom: 16px;
-  color: white;
+  margin-bottom: 2rem;
+  box-shadow: 0px 10px 3px 0px #b1b8ba;
 }
 
 .contact {
@@ -76,7 +76,18 @@ h3 {
   justify-content: space-evenly;
 }
 
-.contact p:last-child > img {
+.contact p:last-child > img, .about img {
   width: 32px;
   height: 32px;
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+.aboutSocials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  margin-bottom: 4rem;
 }
