@@ -5,15 +5,15 @@ body {
   flex-direction: column;
 }
 
-header {
+.myimage {
   position: relative;
 }
 
-header > span {
+header span {
   position: absolute;
   bottom: 10px;
   left: 20px;
-  width: min-content;
+  width: max-content;
   font-size: 32px;
   font-weight: 700;
   color: white;
@@ -136,9 +136,6 @@ h2, h3 {
     width: 48px;
     height: 48px;
   }
-  .contact p:last-child {
-    justify-content: space-evenly;
-  }
   footer {
     grid-template-columns: 1fr 1fr;
   }
@@ -149,5 +146,39 @@ h2, h3 {
   }
   .projectInfo h3 {
     width: max-content;
+  }
+  header {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+  }
+  .about {
+    border: 1px solid grey;
+    padding-left: 2rem;
+    box-shadow: 1px 7px 11px 0px grey;
+  }
+  .about > h2 {
+    text-align: left;
+  }
+  .aboutSocials {
+    justify-content: end;
+    justify-items: flex-end;
+    grid-template-columns: repeat(3, max-content);
+    gap: 2rem;
+    margin-bottom: 0;
+  }
+  .myImage {
+    transform: scale(1.1);
+  }
+  .work {
+  text-align: left;
+    margin-left: 1rem;
+  }
+  .contact {
+    padding-left: 1rem;
+  }
+  .contact > h2 {
+    text-align: left;
+    margin-bottom: 0;
   }
 }
