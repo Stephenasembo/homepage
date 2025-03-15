@@ -93,6 +93,18 @@ h2, h3 {
   margin-bottom: 4rem;
 }
 
+.contact span {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact span img {
+  width: 32px;
+  height: 32px;
+  margin: 0;
+}
+
 /* Tablet Design */
 @media (min-width: 680px) {
   footer {
@@ -128,6 +140,10 @@ h2, h3 {
   .work {
     text-align: justify;
   }
+  .contact span img {
+    width: 48px;
+    height: 48px;
+  }  
 }
 
 /* Desktop design */
