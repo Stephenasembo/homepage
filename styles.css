@@ -224,10 +224,12 @@ h2, h3 {
   }
   .about {
     border: 1px solid grey;
-    padding-left: 2rem;
+    padding-top: 1rem;
     box-shadow: 1px 7px 11px 0px grey;
+    height: max-content;
+    padding: 2rem;
   }
-  .about > h2 {
+  .aboutContent > h2 {
     text-align: left;
   }
   .aboutSocials {
