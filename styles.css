@@ -158,6 +158,30 @@ h2, h3 {
     float: left;
     margin-right: 1rem;
   }
+  .name {
+    left: auto;
+    right: 40px;
+    top: 0;
+    color: black;
+  }
+  .aboutContent {
+    border: 1px solid gray;
+    box-shadow: 1px 7px 11px 0px gray;
+    padding: 1rem;
+    padding-top: 4rem;
+  }
+  .about {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+  }
+  .tabletImg > img {
+    position: relative;
+    right: 10px;
+    bottom: 10px;
+    transform: scale(1.1);
+
+  }
 }
 
 /* Desktop design */
