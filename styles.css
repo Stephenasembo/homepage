@@ -111,7 +111,7 @@ h2, h3 {
 }
 
 /* Tablet Design */
-@media (min-width: 680px) {
+@media (min-width: 680px) and (max-width: 999px) {
   footer {
     display: grid;
     grid-template-columns: min-content 1fr;
@@ -186,17 +186,29 @@ h2, h3 {
 
 /* Desktop design */
 @media (min-width: 1000px) {
+  body {
+    font-size: 1.5rem;
+  }
   .contact p:last-child > img {
     width: 48px;
     height: 48px;
   }
   footer {
+    display: grid;
     grid-template-columns: 1fr 1fr;
+    background-color: skyblue;
+    justify-items: center;
+  }
+  .footerImgDiv {
+    margin-top: 1rem;
   }
   .projectDisplay {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
   .projectInfo h3 {
     width: max-content;
@@ -205,6 +217,10 @@ h2, h3 {
     margin: 2rem;
     display: grid;
     grid-template-columns: min-content 1fr;
+  }
+  .work {
+    text-align: left;
+    margin-left: 1rem;
   }
   .about {
     border: 1px solid grey;
@@ -221,6 +237,7 @@ h2, h3 {
     gap: 2rem;
     margin-bottom: 0;
     margin-left: auto;
+    margin: 1rem;
   }
   .myImage {
     display: block;
@@ -233,6 +250,10 @@ h2, h3 {
   .contact > h2 {
     text-align: left;
     margin-bottom: 0;
+  }
+  .contact p:last-child {
+    justify-content: start;
+    gap: 32px;
   }
   .tabletImg {
     display: none;
