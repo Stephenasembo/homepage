@@ -5,7 +5,7 @@ body {
   flex-direction: column;
 }
 
-.myimage {
+.myImage {
   position: relative;
 }
 
@@ -106,6 +106,10 @@ h2, h3 {
   margin: 0;
 }
 
+.tabletImg {
+  display: none;
+}
+
 /* Tablet Design */
 @media (min-width: 680px) {
   footer {
@@ -145,6 +149,14 @@ h2, h3 {
   .contact span img {
     width: 48px;
     height: 48px;
+  }
+  .myImage {
+    display: none;
+  }
+  .tabletImg {
+    display: block;
+    float: left;
+    margin-right: 1rem;
   }
 }
 
@@ -187,7 +199,9 @@ h2, h3 {
     margin-left: auto;
   }
   .myImage {
-    transform: scale(1.1);
+    display: block;
+    transform: scale(1.2);
+    margin: 1rem;
   }
   .contact {
     padding-left: 1rem;
@@ -195,5 +209,8 @@ h2, h3 {
   .contact > h2 {
     text-align: left;
     margin-bottom: 0;
+  }
+  .tabletImg {
+    display: none;
   }
 }
